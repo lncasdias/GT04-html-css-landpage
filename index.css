@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F7F2E8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 220px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    & div {
+        display: flex;
+        align-items: center;
+
+        & a {
+            padding: 30px;
+            font-size: 20px;
+            color: #3C0E0E;
+            font-weight: 500px;
+
+            &.bttn {
+                background-color: #3C0E0E;
+                color: #FFFFFF;
+                padding: 5px 26px 0 26px;
+                border-radius: 30px;  
+            }
+        }
+
+        & ul {
+            display: flex;
+
+                & li {
+                    border-bottom: 5px solid transparent;
+                    transition-duration: 200ms;
+                    
+                    &:hover {
+                        border-bottom: 5px solid #3C0E0E;
+                    }
+                }
+
+        }
+    }
+
+    & h1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    & img {
+        width: 190px;
+    }
+}
+
+#topo {
+    display: flex;
+    padding: 0 220px;
+    justify-content: space-between;
+
+    & div:first-child {
+        padding-top: 160px;
+        padding-left: 44px;
+        width: 350px;
+        color: #3C0E0E;
+
+        & h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        & h2 {
+            font-size: 80px;
+            line-height: 84px;
+            margin-bottom: 20px;
+        }
+    }
+}
