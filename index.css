@@ -356,7 +356,6 @@ header {
   width: 1115px;
   border-radius: 48px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   position: relative;
@@ -371,6 +370,7 @@ header {
     & h2 {
       font-size: 80px;
       line-height: 100%;
+      margin-top: 55px;
     }
 
     & .detalhe {
@@ -397,21 +397,23 @@ header {
     & a {
       color: #3c0e0e;
       font-weight: 600;
+      margin-bottom: 55px;
+      display: block;
     }
   }
 
   & img {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
   }
 
   & div:nth-child(3) {
     background: linear-gradient(202.65deg, #8f423d 4.72%, #ffffff 102.83%);
     border-radius: 0px 48px 48px 0px;
     width: 373px;
-    height: 562px;
+   
     display: flex;
     flex-direction: column;
     padding: 0 36px;
