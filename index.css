@@ -86,6 +86,10 @@ header {
       margin-bottom: 20px;
     }
   }
+
+  & img:nth-of-type(2){
+    display: none;
+  }
 }
 
 #cafes {
@@ -502,3 +506,78 @@ footer {
     font-weight: 600;
   }
 }
+
+@media screen and (width <= 400px) {
+  header{
+    padding: 0;
+
+    img {
+      margin-left: -30px;
+    }
+
+    & div:nth-of-type(1){
+      & h1{
+        display: block;
+        font-weight: bold;
+        width: 115px;
+      }
+
+      & ul {
+        display: none;
+      }
+    }
+
+    & div:nth-of-type(2){
+      & ul {
+        li:nth-of-type(1){
+          display: none;
+        }
+      }
+    }
+  } 
+
+  #topo{
+     padding: 0;
+     
+     & div:nth-of-type(1){
+      padding-top: 186px;
+      padding-left: 14px;
+      padding-bottom: 118px;
+      width: 256px;
+
+      & h3{
+        font-size: 32px;
+        width: 320px;
+      }
+
+      & h2{
+        font-size: 48px;
+        line-height: 100%;
+      }
+
+      & p{
+        font-size: 22px;
+      }
+     }
+
+     & img:nth-of-type(1){
+      display: none;
+     }
+
+     & img:nth-of-type(2){
+      display: inline;
+      border: 1px solid red;;
+     }
+    }
+
+  #cafes{
+    background-image: none;
+
+    & .container-cafes{
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  #
+  }
